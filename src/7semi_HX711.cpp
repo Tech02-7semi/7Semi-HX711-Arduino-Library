@@ -74,5 +74,6 @@ void HX711_7semi::setScale(int scale) {
 // Return calculated weight in grams
 float HX711_7semi::getWeight() {
   long raw = readAverage(5);
-  return (raw - _tare) / scale_factor;
+  return (raw - _tare) / scale_factor;;
 }
+
